@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Scada:wght@400;700&display=swap');
+
+// color
+$color-primary: #1B84BF;
+$color-white: #ffffff;
+$color-dark: #282828;
+$color-red: #BF1B1B;
+$color-grey: #D2D1D1;
+$color-dark-grey: #7B7B7B;
+
+// box-shadow
+$box-shadow-card: 2px 2px 14px rgba($color-dark, 0.2);
+$box-shadow-round-btn: -2px 0 3px rgba(40, 40, 40, 0.18);
+$box-shadow-btn-hover: -2px 0 3px rgba(40, 40, 40, 0.18);
+
+//font
+$font-family: 'Scada', sans-serif;
+
+// width
+$container-max-width: 1140px;
+
+// padding, margin
+$padding: 15px;
+
+// radius
+$radius: 3px;
+
+// transition 
+$transition: 0.2s all ease-in-out;
+
+// screen size
+$screen-xs: 414px;

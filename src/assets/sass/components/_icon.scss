@@ -1,0 +1,96 @@
+.icon-checkbox {
+  display: block;
+  min-width: 12px;
+  min-height: 12px;
+  border: 1px solid $color-primary;
+  border-radius: $radius;
+
+  &--checked {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 6px;
+      height: 1px;
+      background: $color-primary;
+      position: absolute;
+      top: 5px;
+    }
+
+    &::before {
+      transform: rotate(41.6deg);
+      left: 1px;
+    }
+
+    &::after {
+      transform: rotate(136deg);
+      width: 12px;
+      left: 4px;
+      top: 3px;
+    }
+  }
+}
+
+.icon-chevron-right {
+  display: block;
+  width: 6px;
+  height: 10px;
+  position: relative;
+  transition: $transition;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 1px;
+    background: $color-primary;
+    position: absolute;
+    top: 2px;
+    left: 0;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    top: 6px;
+  }
+
+  &--rotate {
+    transform: rotate(90deg);
+  }
+}
+
+.icon-remove {
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 1px;
+    background: $color-red;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
